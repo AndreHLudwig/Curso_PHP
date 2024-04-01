@@ -3,8 +3,11 @@
   include_once("config/url.php");
   include_once("config/process.php");
 
-  //limpa a mensagem
-  
+  // limpa a mensagem
+  if(isset($_SESSION['msg'])) {
+    $printMsg = $_SESSION['msg'];
+    $_SESSION['msg'] = '';
+  }
     
 ?>
 
@@ -30,7 +33,7 @@
         <div>
            <div class="navbar-nav">
             <a class="nav-link active" id="hoome-link" href="<?= $BASE_URL ?>index.php">Agenda</a>
-            <a class="nav-link active" id="hoome-link" href="<?= $BASE_URL ?>create.php">Adicionar Contato</a>
+            <a class="nav-link active" href="<?= $BASE_URL ?>create.php">Adicionar Contato</a>
            </div> 
         </div>
       </nav>
