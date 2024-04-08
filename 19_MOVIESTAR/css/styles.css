@@ -73,12 +73,15 @@
     color: #842029;
     background-color: #F8D7DA;
     border-color: #F5C2C7;
+    border-radius: 5px;
   }
   
   .msg.success {
-    color: #0F5132;
-    background-color: #D1E7DD;
-    border-color: #BADBCC;
+    color: #1d6c47;
+    background-color: #65cdac;
+    border-color: #65cdac;
+    border-radius: 5px;
+
   }
   
   /* Home */
